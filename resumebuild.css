@@ -1,0 +1,246 @@
+:root{
+    --primary-color:  #1E5267;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #212121;
+}
+
+.form{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
+    padding: 4vw;
+    gap: 4vw;
+    
+}
+.form .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    flex-direction: column;
+    
+}
+.form .left input{ 
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 6px;
+}
+.form .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    flex-direction: column;
+
+}
+
+.form .right textarea{
+    padding: 10px 12px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 6px;
+}
+
+
+.add{
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    background-color: #1E5267;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    transition: color ease-in-out 0.3s;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: #478fab;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.generate-resume{
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    background-color: #1E5267;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    transition: color ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.generate-resume:hover{
+    background-color: #478fab;
+}
+
+.resume-container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+    position: relative;
+    align-items:  center;
+    padding: 4vw;
+}
+
+.resume-container .resume{
+    width: 60%;
+    min-height: 100vh;
+   
+    display: flex;
+    align-items: start;
+    
+}
+.resume-container .resume .left{
+    width: 35%;
+    /* height: 100%; */
+    background-color: #dadada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+}
+.resume-container .resume .left .profile-image{
+    height: 12vw;
+    width: 12vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    
+    
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+.contact-container .row{
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.skills-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.skills-container .skills{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+
+.skills-container .skill-item{
+    padding: 5px 8px;
+    font-size: 1rem;
+    background-color:#2e2d2b;
+    color: white;
+    border-radius: 6px;
+}
+
+
+.resume-container .resume .right{
+    width: 65%;
+    height: 100%;
+    background-color: #2e2d2b;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ 
+}
+
+.name-container{
+    padding: 2vw;
+}
+.resume .right .name{
+    font-size: 5rem;
+    color: #9ac248;
+    line-height: 80px;
+  
+}
+
+.resume .right .title{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #9b9b9b;
+    padding: 0 2vw;
+}
+
+
+.about-me-container, .resume .experience-container, .resume .education-container{
+    width: 100%;
+    margin-top: 20px;
+   
+}
+.about-me-container .about-me-label, .resume .experience-container .experience-label, .resume .education-container .education-label{
+    width: 50%;
+    background-color: #9ac248;
+    padding: 6px 8px;
+   
+}
+.about-me-container .about-me, .resume .experience-container .experience, .resume .education-container .education{
+    padding: 2vw;
+    color: #9b9b9b;
+}
+
+.resume-container .download-resume{
+    position: absolute;
+    right: 5vw;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.resume-container .download-resume:hover{
+   opacity: 0.8;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+             <div class="left">
+                <h2 class="logo" >Resume Builder</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./ResumeBuild.html">Resume Builder</a></li>
+                </ul>
+             </div>
+             <div class="right">
+                <button class="build-resume"><a href="./resumebuild.html">Build your Resume</a></button>
+             </div>
+        </div>
+        <div class="hero-section">
+            <div class="left">
+                <h1 class="animate-from-left">Create a resume that your dream job will notice</h1>
+                <p class="animate-from-left"> Build your resume with us <br> Now 😂🔥✨</p>
+                <button class="build-resume animate-from-left"><a href="./resumebuild.html">Build your Resume</a></button>            </div>
+            <div class="right">
+                <img class="resume-img"  src="./resume.jpg" alt="Resume Picture">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    
+        gsap.from(".animate-from-left", {
+
+            x: -100, 
+            stagger: 0.2,
+            delay: 1,
+            opacity: 0
+            
+        })
+
+        
+
+
+</script>
+</body>
+</html>

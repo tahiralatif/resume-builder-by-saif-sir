@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Resume</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="resumebuild.css">
+</head>
+<body>
+    <!-- <h1>Generate your Resume</h1> -->
+    <div class="form">
+       <div class="left">
+        <input placeholder="Your name"  type="text" class="nameField">
+        <input placeholder="Your title"  type="text" class="titleField">
+        <input placeholder="Your Linkedin url"  type="url" class="linkedinField">
+        <input placeholder="Your Facebook url"  type="url" class="facebookField">
+        <input placeholder="Your Twitter"  type="url" class="twitterField">
+        <input placeholder="Your Portfolio link"  type="url" class="PortfolioField">
+       </div>
+    
+       <div class="right">
+            <textarea name="" placeholder="Coding, Development, Javascript, python"  class="skillsField" rows="10" cols="60"></textarea>
+            <textarea name="" placeholder="About me"  class="about-meField" rows="10" cols="60"></textarea>
+            <div class="education-container">
+                <textarea name="" placeholder="Education"  class="educationField" rows="10" cols="60"></textarea>
+                <button class="add  add-education">Add</button>
+            </div>
+            <div class="experience-container">
+                <textarea name="" placeholder="Experience" class="experienceField" rows="10" cols="60"></textarea>
+                <button class="add add-experience">Add</button>
+
+            </div>
+       </div>
+  
+    </div>
+    <div class="btn-container">
+        <button class="generate-resume">Generate Resume</button>
+    </div>
+
+  <div class="resume-container">
+    <div class="resume">
+        <div class="left">
+            <img class="profile-image"  src="https://i.pinimg.com/736x/14/9d/6f/149d6f1d44b511f3deadffaeba0ecff8.jpg" alt="profile-image">
+            <div class="contact-container">
+                <h2>Contact</h2>
+                <div class="row">
+                    <i class="ri-linkedin-box-fill"></i>
+                    <p><a class="linkedin"  href="#">Linkedin</a></p>
+                </div>
+                <div class="row">
+                    <i class="ri-facebook-box-fill"></i>                    <p><a class="facebook" href="#">Facebook</a></p>
+                </div>
+                <div class="row">
+                    <i class="ri-twitter-x-fill"></i>                    <p><a class="twitter" href="#">Twitter</a></p>
+                </div>
+                <div class="row">
+                    <i class="ri-code-box-fill"></i>                    <p><a class="portfolio" href="#">Portfolio</a></p>
+                </div>
+
+            </div>
+
+            <div class="skills-container">
+                <h2>Skills</h2>
+               <div class="skills">
+                
+                <div class="skill-item">C++</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">Bootstrap</div>
+                <div class="skill-item">Tailwind</div>
+                <div class="skill-item">Node JS</div>
+                <div class="skill-item">Mongoo DB</div>
+               </div>
+            </div>
+        </div>
+        <div class="right">
+           <div class="name-container">
+            <h1 class="name"></h1>
+            
+           </div>
+
+            <p class="title">Software Engineer</p>
+
+            <div class="about-me-container">
+                <div class="about-me-label">About me</div>
+                <div class="about-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quia modi, minima, corporis debitis, ipsum in illum saepe porro distinctio ea quo autem iste eos!</div>
+            </div>
+            <div class="experience-container">
+                <div class="experience-label">Experience</div>
+                <div class="experience">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quia modi, minima, corporis debitis, ipsum in illum saepe porro distinctio ea quo autem iste eos!</div>
+
+            </div>
+            <div class="education-container">
+                <div class="education-label">Education</div>
+                <div class="education">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quia modi, minima, corporis debitis, ipsum in illum saepe porro distinctio ea quo autem iste eos!</div>
+
+            </div>
+        </div>
+
+       
+    </div>
+
+
+    <button class="download-resume">Download Resume</button>
+  
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
